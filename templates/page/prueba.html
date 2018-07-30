@@ -33,7 +33,7 @@
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(20,20,20);
+        var app_public = $.environmentVar('blend','blend','blend');
         var config = {
             'app_public' : app_public,
             'base_url' : base_url,
@@ -114,8 +114,8 @@
 </div>
 </section>
 
-<!-- 
-<section id="first-page-scroll"> 
+<!--
+<section id="first-page-scroll">
 
 <div  class="container">
     <div class="col-md-12">
@@ -128,7 +128,7 @@
 </section>
 
 
-<section id="locales"> 
+<section id="locales">
 
 <div  class="container">
     <div class="col-md-12">
@@ -142,7 +142,7 @@
 </section>
 
 
-<section> 
+<section>
 
 <div class="container">
     <div class="col-md-12">
@@ -171,14 +171,14 @@
 <section>
     <div class="container">
      <div align="center">
-      
+
 
   <div class="col-md-6 space20 img-cat sobre-botones">
   <div class="box-product" onclick="">
-    <div class="vertical-center-cont"> 
-      <div class="horizontal-center-cont"> 
-        <div class="box-product-info" onclick="">     
-            <button type="button" class="btn btn-default cat"> Ver detalle </button> 
+    <div class="vertical-center-cont">
+      <div class="horizontal-center-cont">
+        <div class="box-product-info" onclick="">
+            <button type="button" class="btn btn-default cat"> Ver detalle </button>
         </div>
       </div>
     </div>
@@ -192,7 +192,7 @@
     <input type="file" class="editableimage" image-id="{{ site.name }}_box_chi_1" name="image" id="img_box_chi_1" >
   </div>
   {% end %}
-     
+
      {% if is_admin %}
        <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_1' }}" content="{{ read_link(site.name + '_box_chi_1') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
        {% end %}
@@ -204,16 +204,16 @@
   </div>
 </div>
 </a>
-           
 
-   
+
+
 
      <div class="col-md-6 space20 img-cat sobre-botones">
   <div class="box-product" onclick="">
-    <div class="vertical-center-cont"> 
-      <div class="horizontal-center-cont"> 
-        <div class="box-product-info" onclick="">     
-            <button type="button" class="btn btn-default cat"> Ver detalle </button>      
+    <div class="vertical-center-cont">
+      <div class="horizontal-center-cont">
+        <div class="box-product-info" onclick="">
+            <button type="button" class="btn btn-default cat"> Ver detalle </button>
         </div>
       </div>
     </div>
@@ -231,7 +231,7 @@
      {% if is_admin %}
        <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_2' }}" content="{{ read_link(site.name + '_box_chi_2') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
        {% end %}
- <a id="{{ site.name + '_box_chi_2' }}" href="{{ read_link(site.name + '_box_chi_2') }}">      
+ <a id="{{ site.name + '_box_chi_2' }}" href="{{ read_link(site.name + '_box_chi_2') }}">
   <img id="{{ site.name }}_box_chi_2" src="{{ read_image(site.name + '_box_chi_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_chi_2') }}'" class="img-edit" alt="item">
   <div class="img-text-center">
     <div class="text-box text-left {{editabletext}}" text-id="{{ site.name + '_t_box_2' }}"> {{ read_text(site.name +  '_t_box_2') }}</div>
@@ -240,16 +240,16 @@
 </div>
 </a>
 
-           
 
-  
-   
+
+
+
    <div class="col-md-6 space20 img-cat sobre-botones">
   <div class="box-product" onclick="">
-    <div class="vertical-center-cont"> 
-      <div class="horizontal-center-cont"> 
-        <div class="box-product-info" onclick="">             
-            <button type="button" class="btn btn-default cat"> Ver detalle </button> 
+    <div class="vertical-center-cont">
+      <div class="horizontal-center-cont">
+        <div class="box-product-info" onclick="">
+            <button type="button" class="btn btn-default cat"> Ver detalle </button>
         </div>
       </div>
     </div>
@@ -263,7 +263,7 @@
     <input type="file" class="editableimage" image-id="{{ site.name }}_box_chi_3" name="image" id="img_box_chi_3" >
   </div>
   {% end %}
-      
+
       {% if is_admin %}
        <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_3' }}" content="{{ read_link(site.name + '_box_chi_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
        {% end %}
@@ -276,16 +276,16 @@
 </div>
 </a>
 
-           
 
- 
+
+
 
   <div class="col-md-6 space20 img-cat sobre-botones">
   <div class="box-product" onclick="">
-    <div class="vertical-center-cont"> 
-      <div class="horizontal-center-cont"> 
-        <div class="box-product-info" onclick="">     
-            <button type="button" class="btn btn-default cat"> Ver detalle </button> 
+    <div class="vertical-center-cont">
+      <div class="horizontal-center-cont">
+        <div class="box-product-info" onclick="">
+            <button type="button" class="btn btn-default cat"> Ver detalle </button>
         </div>
       </div>
     </div>
@@ -299,7 +299,7 @@
     <input type="file" class="editableimage" image-id="{{ site.name }}_box_chi_4" name="image" id="img_box_chi_4" >
   </div>
   {% end %}
-    
+
   {% if is_admin %}
        <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_4' }}" content="{{ read_link(site.name + '_box_chi_4') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
   {% end %}
@@ -317,14 +317,14 @@
 
 <!-- ***cinco** -->
 
- 
+
 
   <div class="col-md-6 space20 img-cat sobre-botones">
   <div class="box-product" onclick="">
-    <div class="vertical-center-cont"> 
-      <div class="horizontal-center-cont"> 
-        <div class="box-product-info" onclick="">     
-            <button type="button" class="btn btn-default cat"> Ver detalle </button> 
+    <div class="vertical-center-cont">
+      <div class="horizontal-center-cont">
+        <div class="box-product-info" onclick="">
+            <button type="button" class="btn btn-default cat"> Ver detalle </button>
         </div>
       </div>
     </div>
@@ -361,10 +361,10 @@
 
   <div class="col-md-6 space20 img-cat sobre-botones">
   <div class="box-product" onclick="">
-    <div class="vertical-center-cont"> 
-      <div class="horizontal-center-cont"> 
-        <div class="box-product-info" onclick="">     
-            <button type="button" class="btn btn-default cat"> Ver detalle </button> 
+    <div class="vertical-center-cont">
+      <div class="horizontal-center-cont">
+        <div class="box-product-info" onclick="">
+            <button type="button" class="btn btn-default cat"> Ver detalle </button>
         </div>
       </div>
     </div>
@@ -393,7 +393,7 @@
 </a>
 
   </div>
-   
+
 </section>
 
 
@@ -407,7 +407,7 @@
       </div>
     </div>
 </section>
- 
+
 
 <section>
    <div class="container">

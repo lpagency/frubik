@@ -22,7 +22,7 @@
              'https://pay.loadingplay.com',
              'https://pay.loadingplay.com',
              'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(20,20,20);
+        var app_public = $.environmentVar('blend','blend','blend');
         var config = {
             'app_public' : app_public,
             'base_url' : base_url,
@@ -69,7 +69,7 @@
                 var asunto = $("#itComentario").val();
 
                 var error_count = 0;
- 
+
                 // --- Condicionales anidados ----
                 //Si nombre está vacío
                 //Muestra el mensaje
@@ -115,7 +115,7 @@
                 {
                     return false;
                 }
- 
+
             });//click
         });//ready
 </script>
@@ -142,11 +142,11 @@
 <div class="background-content">
      <div class="col-md-2">
            <a href="">
-            <div  class="row back">           
-               <!--  <img class="logo-sy" src="https://84static.loadingplay.com/static/images/e520c4f3e708c8a3d8f12843a22e8e44_isotipo_LP_blanco.png">  -->         
+            <div  class="row back">
+               <!--  <img class="logo-sy" src="https://84static.loadingplay.com/static/images/e520c4f3e708c8a3d8f12843a22e8e44_isotipo_LP_blanco.png">  -->
             </div>
             </a>
-     </div> 
+     </div>
 
 <div class="">
 <!-- 	<img class="fondo-form"src="https://7static.loadingplay.com/static/images/a9638bcba8ce78ab5a8b3564617b6917_Banner_principal_2.png"> -->
@@ -173,7 +173,7 @@
                 {% else %}
                 <h3 class="description distrib contact" style="text-align:center;"> {{ read_text(site.name + '_texto-contact1') }} </h3>
                 {% end %}
-	            <!-- <p class="description descrip-Form" style="text-align:center;font-style:italic" > 
+	            <!-- <p class="description descrip-Form" style="text-align:center;font-style:italic" >
 	            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -183,7 +183,7 @@
                 {% else %}
                 <p class="description descrip-Form contact" style="text-align:center;font-style:italic"> {{ read_text(site.name + '_texto-descrip1') }} </p>
                 {% end %} -->
-	           
+
 	            <!-- <div class="">Descargar Brochure</div> -->
 	            <!-- <button type="button" class="btn btn-default btn-lg disabled download center-block" style="text-align:center;">Descargar Brochure</button> -->
        		</div>
@@ -214,9 +214,9 @@
                     </div>
                 </div>
             </div> -->
-            
+
             <div class="container-fluid contact product text-left container-fluid-magle fondo-contact" style="display: inherit;">
-                <div class="row">       
+                <div class="row">
                     <!-- <div class="col-xs-12 col-sm-4">
                         <address>
                             <br>
@@ -296,8 +296,8 @@
                                         </div>
                                         <span id="helpBlock3" class="hidden help-block help-mail">Escribe tu Email</span>
                                     </div>
-                                </div>  
-                            </div>  
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label class="control-label"></label>
                                 <div class="controls">
@@ -307,17 +307,17 @@
                             </div>
                             <p><button name="submit" id="bEnviar" type="submit" class="btn btn-store btn-block " data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Email Sent">Enviar </button></p>
                             <input type="hidden" name="submitted" id="submitted3" value="true">
-                        </form> 
+                        </form>
                         </div>
 
-                    </div>      
-                
+                    </div>
+
                   </div>
-                </div>  
+                </div>
             </div>
-            
-			
+
+
 
 	</div>
-{% include '../home/footer.html' %}		
+{% include '../home/footer.html' %}
 {% end %}

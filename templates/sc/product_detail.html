@@ -29,7 +29,7 @@
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(20,20,20);
+        var app_public = $.environmentVar('blend','blend','blend');
 
         $(document).ecommerce('product_detail', {
             'app_public' : app_public,
@@ -56,7 +56,7 @@
                 {
                     // $('.ellipsis').ellipsis();
                 }
-                
+
             };
             $('.product-related').ecommerce('product_box', config);
         };
@@ -101,10 +101,10 @@
                     <div id="product-detail-id" class="col-md-6 col-sm-10 col-xs-12">
                         <div align="center">
                             <h1 class="name name_prod_detail" class="line" href="#">{{! name }}</h1>
-                            <h3 class="descr_prod_detail ellipsis multiline"> 
+                            <h3 class="descr_prod_detail ellipsis multiline">
                       {{! description }}</h3>
                             <div class="product-price-2">{{! main_price|money }} </div>
-                             <button 
+                             <button
                              type="button"
                                 class="btn add-to-cart btn-success car"
                                 id="open-cart"
@@ -119,7 +119,7 @@
                                 lp-cart-add>Comprar </button>
                         </div>
                     </div>
-                <div align="center">   
+                <div align="center">
                    <div class="box-new">
                       <img src="{{! images[4]['thumb_500'] }}" title="" alt="" class="new-images hidden-xs">
                    </div>
