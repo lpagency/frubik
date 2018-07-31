@@ -15,7 +15,7 @@
         .ol{
           visibility: hidden;
         }
-      
+
         .franja-color{
             background: transparent;
         }
@@ -47,7 +47,7 @@
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(20,20,20);
+        var app_public = $.environmentVar('blend','blend','blend');
         var config = {
             'app_public' : app_public,
             'base_url' : base_url,
@@ -80,11 +80,11 @@
 {% block body %}
 
         <!-- registration -->
-        
+
 <section>
       <div class="mobile-det fub" style="background:url('{{ article['thumb_500'] }}'); height:635px; background-size:cover;  filter: grayscale(0%) brightness(65%);-webkit-filter: grayscale(0%) brightness(65%);
     -moz-filter: grayscale(0%) brightness(65%);-ms-filter: grayscale(0%) brightness(65%);-o-filter: grayscale(0%) brightness(65%);">
-       
+
         <img class="fondo-articulo hidden" src="{{ article["thumb_500"] }}" class="img-responsive lazy" data-original="{{ article["url"] }}" alt="item">
 
                <!--  <div class="col-md-12">
@@ -92,9 +92,9 @@
                 </div> -->
        </div>
 </section>
-<!-- 
+<!--
 <section >
-        <div class="container"> 
+        <div class="container">
            <div class="row">
                <div class="col-md-12">
                    <h2 class="text-center sub-detail-art {{editabletext}}" text-id="{{ site.name + '_det_2' }}"> {{ read_text(site.name +  '_det_2') }}</h2>
@@ -124,10 +124,10 @@
                         <div class="content articulo-text">
                             <div class="col-sm-12 especial">
                                 <h2 class="h2-art til-ban-2">{{ article["caption"] }}
-                             
+
                                 </h2>
                             </div>
-                            
+
                             <div align="center">
                                 <div class="col-md-12 content-picture">
                                     <!-- <div>
@@ -135,7 +135,7 @@
                                     </div> -->
                                 </div>
                             </div>
-                            
+
                            <!--  <div class="col-sm-12 especial"> -->
                            <div align="center">
                                <div class="col-sm-12">
@@ -164,8 +164,8 @@
                     </div>
                 </div>
          <!--    </div> -->
-            
-            
+
+
             <!-- row 4 -->
         </div>
 
@@ -196,7 +196,7 @@
             <div class="flecha clearfix">
             </div>
         </div>
- 
+
 
 {% include '../home/footer.html' %}
 {% end %}

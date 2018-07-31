@@ -8,7 +8,7 @@ var checkout_url = $.environmentVar(
      'https://pay.loadingplay.com',
      'https://pay.loadingplay.com',
      'https://pay.loadingplay.com');
-var app_public = $.environmentVar(20,20,20);
+var app_public = $.environmentVar('blend','blend','blend');
 
 var initMap = function(){
     $.ajax({
@@ -31,8 +31,8 @@ var initMap = function(){
         });
 
         google.maps.event.addListener(
-            marker, 
-            'click', 
+            marker,
+            'click',
             function()
             {
                 if(!popup)
